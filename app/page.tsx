@@ -1,12 +1,13 @@
-import Sidebar from './components/Sidebar'
+import Sidebar from "./components/Sidebar";
 
 function HomePage() {
   return (
-    <div>
+    <div className="bg-black h-screen overflow-hidden">
+      <main>
         <Sidebar />
-        <p className=' text-3xl'>test</p>
+      </main>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
