@@ -74,6 +74,9 @@ function Player() {
     await spotifyApi
       .getMyCurrentPlayingTrack()
       .then((data) => setCurentTrackId(data.body?.item?.id));
+    await spotifyApi
+      .getMyCurrentPlayingTrack()
+      .then((data) => setCurentTrackId(data.body?.item?.id));
   };
 
   const playPause = () => {
@@ -88,6 +91,8 @@ function Player() {
     });
   };
 
+  console.log(songInfo, 'DEEZ')
+
   return (
     <div className='text-white h-24 bg-gradient-to-b from-black to-neutral-900 grid grid-cols-3 text-sm md:text-base px-2 md:px-8'>
       <div className='flex items-center space-x-4'>
@@ -98,7 +103,9 @@ function Player() {
         />
         <div>
           <h3 className='font-medium md:text-lg'>{songInfo?.name}</h3>
-          <p className='text-neutral-400 text-xs md:text-sm'>{songInfo?.artists?.[0]?.name}</p>
+          <p className='text-neutral-400 text-xs md:text-sm'>
+            {songInfo?.artists?.[0]?.name}
+          </p>
         </div>
       </div>
 

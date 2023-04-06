@@ -1,38 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spoofy | Spotify Clone
+Built to explore and practice Front End Development concepts and technologies
 
-## Getting Started
+## Description
+I build this clone of Spotify to practice Front End Design concepts and learn more about Front End Development
+- This Web App Controls any instance of Spotify Player running on another app or device. (example: TV, Amazon Echo, Web App, Desktop App, Mobile App)
+- This utilizes the spotify-web-api-node package & NextAuth to make calls to the SpotifyAPI
+- Explores Authentication, Design, and TypeScript
 
-First, run the development server:
+## Usage
+Visit [Spoofy | Spotify Clone]() and sign in with your Spotify account. Next make sure Spotify is playing on another device. Now you can control that device with this web app.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
+Please note I did not recreate every feature available in the Spotify App
+- Authentication: NextAuth
+- Middleware: NextJS Middleware
+- Responsive Design: Even more so than the actual spotify web app
+- Media Playback: Controls playback on another device (play, pause, skip, previous, volume)
+- Load User's Playlists: Loads Playlists, Allows user to select song within playlists.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![NextJS](https://img.shields.io/badge/NextJS-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Credit
+I referrenced a tutorial by Sonny Sangha. However, that tutorial used NextJS12 and Javascript. I opted to use NextJS13 with the experimental App directory with TypeScript to provide myself with an aditional challenge. I also added extra funtionality and modeled my design after the more current up to date version of the Spotify Web App.

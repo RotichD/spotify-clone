@@ -3,27 +3,12 @@ import useSpotify from '@/hooks/useSpotify';
 import { msToMin, addedAt } from '@/lib/time';
 import { useRecoilState } from 'recoil';
 
-type Track = {
-  name: string;
-  artists: { name: string }[];
-  album: {
-    name: string;
-    images: { url: string }[];
-  };
-  duration_ms: number;
-  id: string;
-  uri: string;
-};
 
-type Props = {
-  track: {
-    track: Track;
-    added_at: string;
-  };
+
+interface Props {
   playlistUri: string;
-
+  track: any;
   order: number;
-  playSong: () => void;
 };
 
 function Track({ order, track, playlistUri }: Props) {

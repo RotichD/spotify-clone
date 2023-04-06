@@ -7,7 +7,7 @@ function useSongInfo() {
   const spotifyApi = useSpotify();
   const [currentTrackId, setCurrentTrackId] =
     useRecoilState(currentTrackIdState);
-  const [songInfo, setSongInfo] = useState(null);
+  const [songInfo, setSongInfo] = useState<any>(null);
 
   useEffect(() => {
     const fetchSongInfo = async () => {

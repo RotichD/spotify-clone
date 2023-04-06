@@ -10,12 +10,14 @@ import { useSession } from 'next-auth/react';
 import useSpotify from '@/hooks/useSpotify';
 import { playlistIdState } from '@/atoms/playlistAtom';
 import { useRecoilState } from 'recoil';
+import spotifyApi from '@/lib/spotify';
+import { SetStateAction } from 'react';
 
 function Sidebar() {
   const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
 
-  const [playlists, setPlaylists] = useState([]);
+  const [playlists, setPlaylists] = useState<any>([]);
   const [playlistId, setPlaylistId] = useRecoilState(playlistIdState);
 
   useEffect(() => {
@@ -65,7 +67,7 @@ function Sidebar() {
         <hr className='border-t-[0.1px] border-gray-600 opacity-50' />
 
         <div className='font-normal md:text-sm space-y-4'>
-          {playlists.map((playlist) => (
+          {playlists.map((playlist: Playlist) => (
             <p
               key={playlist.id}
               className='hover:text-white cursor-default transition duration-200'

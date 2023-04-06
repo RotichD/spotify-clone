@@ -28,9 +28,9 @@ function Tracks() {
         <h2 className='text-2xl'>To get started: Make sure Spotify is playing on another device.</h2>
         <p className='text-2xl'>Next: Load a Playlist from the left sidebar</p>
       </div>)}
-      {playlist?.tracks.items.map((track: Track, index: number) => (
+      {playlist?.tracks.items.map((track, index: number) => (
         <Track
-          key={track.track.id}
+          key={index}
           track={track}
           order={index}
           playlistUri={playlist.uri}

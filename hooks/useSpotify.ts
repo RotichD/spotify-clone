@@ -12,10 +12,11 @@ function useSpotify() {
 
   useEffect(() => {
     if (session) {
+      // @ts-ignore
       if (session.error === 'RefreshAccessTokenError') {
         signIn();
       }
-
+      // @ts-ignore
       spotifyApi.setAccessToken(session.user.accessToken);
     }
   },[session])
