@@ -15,7 +15,7 @@ function Track({ order, track, playlistUri }: Props) {
   const spotifyApi = useSpotify();
 
   const {
-    track: { name, artists, album, duration_ms, id, uri },
+    track: { name, artists, album, duration_ms, id },
     added_at,
   } = track;
 

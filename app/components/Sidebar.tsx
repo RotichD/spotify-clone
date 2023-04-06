@@ -13,6 +13,22 @@ import { useRecoilState } from 'recoil';
 import spotifyApi from '@/lib/spotify';
 import { SetStateAction } from 'react';
 
+type Playlist = {
+  name: string;
+  images: { url: string }[];
+  owner: {
+    display_name: string;
+  };
+  followers: {
+    total: number;
+  };
+  tracks: {
+    total: number;
+  };
+  description: string;
+  id: string;
+};
+
 function Sidebar() {
   const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
