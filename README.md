@@ -8,7 +8,7 @@ I build this clone of Spotify to practice Front End Design concepts and learn mo
 - Explores Authentication, Design, and TypeScript
 
 ## Usage
-Visit [Spoofy | Spotify Clone]() and sign in with your Spotify account. Next make sure Spotify is playing on another device. Now you can control that device with this web app.
+Visit [Spoofy | Spotify Clone](https://spoofy.vercel.app) and sign in with your Spotify account. Next make sure Spotify is playing on another device. Now you can control that device with this web app.
 
 ## Features
 Please note I did not recreate every feature available in the Spotify App
