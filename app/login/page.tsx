@@ -13,7 +13,7 @@ const DynamicSignInButton = dynamic(
 );
 
 function LoginPage() {
-  const [providers, setProviders] = useState<Record<string, unknown>>({});
+  const [providers, setProviders] = useState<any>({});
 
   useEffect(() => {
     async function fetchProviders() {
