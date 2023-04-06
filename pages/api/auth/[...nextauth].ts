@@ -3,6 +3,8 @@ import NextAuth from "next-auth/next";
 import SpotifyProvider from "next-auth/providers/spotify";
 import spotifyApi from "@/lib/spotify";
 
+
+
 async function refreshAccessToken(token: any) {
   try {
     spotifyApi.setAccessToken(token.accessToken);
@@ -50,7 +52,7 @@ export default NextAuth({
         };
       }
 
-      if (Date.now() < token.accessTokenExpires!) {
+      if (Date.now < token.accessTokenExpires!) {
         return token;
       }
 
